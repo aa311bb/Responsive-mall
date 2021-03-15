@@ -1,0 +1,56 @@
+html , body {
+    margin: 0;
+}
+ul , ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #333333;
+    outline: none;
+    /* 针对移动端点击高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+input  , button {
+    outline: none;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+header , nav ,footer ,aside , article , div , section , h1 , h2, h3, h4, h5, h6 , p , ul , li {
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 公共样式代码 */
+*[class^="icon"] {
+    /* 背景图大小 */
+    background-image: url(../images/sprites.png);
+    /* 200px / 20 = 10rem */
+    /* 设置背景尺寸 */
+    background-size: 10rem 10rem;
+    /* 设置背景不平铺 */
+    background-repeat: no-repeat;
+}
+.pull-left {
+    float: left !important;
+}
+.pull-right {
+    float: right !important;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    /* 避免在不同浏览器下 会显示伪类元素 */
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+}

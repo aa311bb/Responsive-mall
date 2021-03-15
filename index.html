@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>移动端页面制作 - 电商首页 - my-project </title>
+    <!-- Topbar 小图标 -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <!-- 初始化页面样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 页面主要样式文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入swiper.css文件 -->
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
+    <!-- http服务下  /     表示根地址 -->
+    <!--            ./    表示当前目录 -->
+</head>
+
+<body>
+    <!-- 最大的容器 -->
+    <div class="tt_layout">
+        <!-- 1.0 搜索框 -->
+        <header class="tt_header">
+            <div class="tt_header_box">
+                <div class="tt_logo">
+                    <a href="javascript:void(0)" class="icon"></a>
+                </div>
+                <form>
+                    <span class="icon"></span>
+                    <input type="text" placeholder="提示">
+                </form>
+                <div class="tt_login">
+                    <a href="javascript:void(0)">登录</a>
+                </div>
+            </div>
+        </header>
+        <!-- 2.0 广告 -->
+        <section class="tt_banner">
+            <!-- 轮播图  swiper 插件 -->
+            <div class="swiper-container">
+                <!-- 图片 -->
+                <div class="swiper-wrapper">
+                    <!-- 每一项 -->
+                    <div class="swiper-slide">
+                        <a class="item-link" href="javascript:;"><img src="./images/l1.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item-link" href="javascript:;"><img src="./images/l2.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item-link" href="javascript:;"><img src="./images/l3.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item-link" href="javascript:;"><img src="./images/l4.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item-link" href="javascript:;"><img src="./images/l5.jpg" alt=""></a>
+                    </div>
+                </div>
+                <!-- 导航点 -->
+                <div class="swiper-pagination" id="paginationId"></div>
+            </div>
+        </section>
+        <!-- 3.0 导航分类区块 -->
+        <nav class="tt_nav">
+            <div class="tt_nav_box">
+                <ul id="nav_box_list">
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav0.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav1.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav0.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav1.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav0.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav1.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav0.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="./images/nav1.png" alt="">
+                            <p>物流分类</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 4.0 秒杀区块 -->
+        <section class="tt_seckill">
+            <div class="tt_seckill_box">
+                <div class="seckill_box_top clearfix">
+                    <div class="pull-left">
+                        <span class="sec-kill-icon"></span>
+                        <span class="sec-kill-word">掌上秒杀</span>
+                        <ul>
+                            <li>0</li>
+                            <li>0</li>
+                            <div>:</div>
+                            <li>0</li>
+                            <li>0</li>
+                            <div>:</div>
+                            <li>0</li>
+                            <li>0</li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <a class="more-link" href="javascript:;">更多 &gt; </a>
+                    </div>
+                </div>
+                <div class="seckill_box_bottom">
+                    <ul>
+                        <li>
+                            <a class="opt" href="javascript:;">
+                                <div class="img-box"><img src="./images/detail-1.jpg" alt=""></div>
+                                <div class="price-box">
+                                    <p>￥999</p>
+                                    <p>￥9999</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="opt" href="javascript:;">
+                                <div class="img-box"><img src="./images/detail-2.jpg" alt=""></div>
+                                <div class="price-box">
+                                    <p>￥999</p>
+                                    <p>￥9999</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="opt" href="javascript:;">
+                                <div class="img-box"><img src="./images/detail-3.jpg" alt=""></div>
+                                <div class="price-box">
+                                    <p>￥999</p>
+                                    <p>￥9999</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.0 列表区块 -->
+        <section class="tt_product">
+            <div class="tt_product_top">
+                <h3>京东超市</h3>
+            </div>
+            <div class="tt_product_bottom">
+                <div class="left">
+                    <a href="javascript:;"><img src="./images/cp1.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                    <a href="javascript:;"><img src="./images/cp2.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="./images/cp3.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.0 列表区块 -->
+        <section class="tt_product">
+            <div class="tt_product_top">
+                <h3>京东超市</h3>
+            </div>
+            <div class="tt_product_bottom">
+                <div class="left">
+                    <a href="javascript:;"><img src="./images/cp4.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                    <a href="javascript:;"><img src="./images/cp5.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="./images/cp6.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- 6.0 底部栏 -->
+        <footer class="tt_footer">
+            <div class="tt_footer_box">
+                <ul>
+                    <li><a href="javascript:;"><img src="./assets/home.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="./assets/sort.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="./assets/jx1.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="./assets/car.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="./assets/me.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- 引入依赖的工具库文件 -->
+    <script src="./lib/rem/rem.js"></script>
+    <!-- 引入主要脚本文件 -->
+    <script src="./js/index.js"></script>
+    <!-- 引入插件 -->
+    <script src="./lib/swiper/js/swiper.js"></script>
+    <!-- 编写脚本 -->
+    <script>
+        // 1.0 调用swiper插件
+        new Swiper('.swiper-container', {
+            // .0 设置导航点参数
+            pagination: '.swiper-pagination'
+        })
+        
+
+
+    </script>
+</body>
+
+</html>
